@@ -26,7 +26,7 @@ struct ExampleService {
             
             let parameters: Parameters = [
                 "id": UUID().uuidString,
-                "name": "ed"
+                "name": parameter
             ]
             
             AF.request(
