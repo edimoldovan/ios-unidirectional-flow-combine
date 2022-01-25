@@ -17,15 +17,17 @@ struct Start: View {
                     Text(example.name)
                 }
             }
-            .navigationTitle("Redux Store")
-            .navigationBarItems(
-                trailing: Button(action: {
-                    store.dispatch(ReduxAction.remoteExample(parameter: "some name"))
-                }) {
-                    Image(systemName: "plus.circle")
-                        .font(.system(size: 20, weight: .light , design: .default))
+            .listStyle(PlainListStyle())
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        store.dispatch(ReduxAction.remoteExample(parameter: "some name"))
+                    }) {
+                        Image(systemName: "plus")
+                    }
                 }
-            )
+            }
+            .navigationBarTitle("Redux Store")
         }
     }
 }
