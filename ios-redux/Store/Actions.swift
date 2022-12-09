@@ -8,7 +8,6 @@
 import Foundation
 
 enum ReduxAction {
-    
     case remoteExample(parameter: String)
     case exampleAction(example: Example)
 }

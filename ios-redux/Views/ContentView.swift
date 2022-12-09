@@ -13,7 +13,7 @@ struct ContentView: View {
         initial: ReduxState(),
         reducer: ReduxReducer,
         middlewares: [
-            exampleMiddleware(service: ExampleService())
+            exampleMiddleware()
         ]
     )
     

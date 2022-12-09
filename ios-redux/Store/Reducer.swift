@@ -15,6 +15,9 @@ let ReduxReducer: Reducer<ReduxState, ReduxAction> = { state, action in
     switch action {
         
         case .exampleAction(let example):
+            print("example")
+            print(example)
+            print("example printed")
             mutatingState.examples.append(example)
     
         default:

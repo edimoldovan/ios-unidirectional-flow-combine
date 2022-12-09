@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Start: View {
     @EnvironmentObject var store: ReduxStore
+    @State private var name = ""
     
     var body: some View {
         NavigationView {
@@ -21,10 +22,18 @@ struct Start: View {
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
-                        store.dispatch(ReduxAction.remoteExample(parameter: "some name"))
+                        if (name == "") {
+                            store.dispatch(ReduxAction.remoteExample(parameter: "hi!"))
+                        } else {
+                            store.dispatch(ReduxAction.remoteExample(parameter: "hi \(name)!"))
+                        }
                     }) {
                         Image(systemName: "plus")
                     }
+                }
+                
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    TextField("name", text: $name)
                 }
             }
             .navigationBarTitle("Redux Store")

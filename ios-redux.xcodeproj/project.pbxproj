@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F207970E2730336900647273 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F207970D2730336900647273 /* Alamofire */; };
 		F2079710273034BF00647273 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207970F273034BF00647273 /* Start.swift */; };
 		F2FD0971272AA08F00F8D71A /* ios_reduxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD0970272AA08F00F8D71A /* ios_reduxApp.swift */; };
 		F2FD0973272AA08F00F8D71A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD0972272AA08F00F8D71A /* ContentView.swift */; };
@@ -31,9 +30,6 @@
 		F2FD09AF272AA28100F8D71A /* ExampleMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09AE272AA28100F8D71A /* ExampleMiddleware.swift */; };
 		F2FD09B0272AA28100F8D71A /* ExampleMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09AE272AA28100F8D71A /* ExampleMiddleware.swift */; };
 		F2FD09B1272AA28100F8D71A /* ExampleMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09AE272AA28100F8D71A /* ExampleMiddleware.swift */; };
-		F2FD09B3272AA28D00F8D71A /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09B2272AA28D00F8D71A /* ExampleService.swift */; };
-		F2FD09B4272AA28D00F8D71A /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09B2272AA28D00F8D71A /* ExampleService.swift */; };
-		F2FD09B5272AA28D00F8D71A /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD09B2272AA28D00F8D71A /* ExampleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +66,6 @@
 		F2FD09A4272AA1A300F8D71A /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		F2FD09A8272AA1B400F8D71A /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		F2FD09AE272AA28100F8D71A /* ExampleMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMiddleware.swift; sourceTree = "<group>"; };
-		F2FD09B2272AA28D00F8D71A /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F207970E2730336900647273 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				F2FD09AC272AA20800F8D71A /* Middlewares */,
-				F2FD09AD272AA25A00F8D71A /* Services */,
 				F2FD09A4272AA1A300F8D71A /* Actions.swift */,
 				F2FD09A0272AA19A00F8D71A /* Reducer.swift */,
 				F2FD09A8272AA1B400F8D71A /* State.swift */,
@@ -186,14 +179,6 @@
 			path = Middlewares;
 			sourceTree = "<group>";
 		};
-		F2FD09AD272AA25A00F8D71A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				F2FD09B2272AA28D00F8D71A /* ExampleService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,7 +196,6 @@
 			);
 			name = "ios-redux";
 			packageProductDependencies = (
-				F207970D2730336900647273 /* Alamofire */,
 			);
 			productName = "ios-redux";
 			productReference = F2FD096D272AA08F00F8D71A /* ios-redux.app */;
@@ -286,7 +270,6 @@
 			);
 			mainGroup = F2FD0964272AA08F00F8D71A;
 			packageReferences = (
-				F207970C2730336900647273 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F2FD096E272AA08F00F8D71A /* Products */;
 			projectDirPath = "";
@@ -334,7 +317,6 @@
 				F2FD099D272AA18A00F8D71A /* Store.swift in Sources */,
 				F2FD0973272AA08F00F8D71A /* ContentView.swift in Sources */,
 				F2FD09A1272AA19A00F8D71A /* Reducer.swift in Sources */,
-				F2FD09B3272AA28D00F8D71A /* ExampleService.swift in Sources */,
 				F2FD09AF272AA28100F8D71A /* ExampleMiddleware.swift in Sources */,
 				F2FD0971272AA08F00F8D71A /* ios_reduxApp.swift in Sources */,
 				F2079710273034BF00647273 /* Start.swift in Sources */,
@@ -351,7 +333,6 @@
 				F2FD099E272AA18A00F8D71A /* Store.swift in Sources */,
 				F2FD09AA272AA1B400F8D71A /* State.swift in Sources */,
 				F2FD09B0272AA28100F8D71A /* ExampleMiddleware.swift in Sources */,
-				F2FD09B4272AA28D00F8D71A /* ExampleService.swift in Sources */,
 				F2FD09A2272AA19A00F8D71A /* Reducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +345,6 @@
 				F2FD099F272AA18A00F8D71A /* Store.swift in Sources */,
 				F2FD098C272AA09A00F8D71A /* ios_reduxUITests.swift in Sources */,
 				F2FD09A3272AA19A00F8D71A /* Reducer.swift in Sources */,
-				F2FD09B5272AA28D00F8D71A /* ExampleService.swift in Sources */,
 				F2FD09B1272AA28100F8D71A /* ExampleMiddleware.swift in Sources */,
 				F2FD098E272AA09A00F8D71A /* ios_reduxUITestsLaunchTests.swift in Sources */,
 				F2FD09AB272AA1B400F8D71A /* State.swift in Sources */,
@@ -699,25 +679,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F207970C2730336900647273 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F207970D2730336900647273 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F207970C2730336900647273 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2FD0965272AA08F00F8D71A /* Project object */;
 }
